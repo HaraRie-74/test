@@ -104,3 +104,60 @@
 # end
 
 # puts withdrow(saving, money)
+
+
+# text = gets
+# last = text.slice(-1)
+# puts last
+
+# a = gets.chomp
+# puts a.slice(-1)
+# getsで受け取った値は最後に改行が入っている。chompで改行を取り消す。
+
+# a = 128
+# b = 100
+# puts a / b
+
+# array = ["あいう", "えお", "かきく"]
+# array.delete_at(-1)
+# p array
+
+
+
+
+# 画像用ハッシュ
+# items_img = {
+#     "剣" => "http://paiza.jp/learning/images/sword.png",
+#     "盾" => "http://paiza.jp/learning/images/shield.png",
+#     "回復薬" => "http://paiza.jp/learning/images/potion.png",
+#     "クリスタル" => "http://paiza.jp/learning/images/crystal.png"
+# }
+
+# ここから下を記述しよう
+# item_count = gets.chomp.to_i
+
+# item_name = []
+# for item in (1..item_count) do
+#     item = gets.chomp
+#     item_name.push(item)
+# end
+
+# item_name.each do |item|
+#     puts "<img src = '#{items_img[item]}'>"
+# end
+
+
+# ハッシュの種類
+# ２と３はシンボルを使用した。
+# 動きは変わらない。コード数を減らすためのもの。
+enemies1 = {"ザコ" => "スライム", "中ボス" => "ドラゴン", "ラスボス" => "魔王"}
+p enemies1
+p enemies1["ザコ"]
+
+enemies2 = {:ザコ => "スライム", :中ボス => "ドラゴン", :ラスボス => "魔王"}
+p enemies2
+p enemies2[:中ボス]
+
+enemies3 = {ザコ: "スライム", 中ボス: "ドラゴン", ラスボス: "魔王"}
+p enemies3
+p enemies3[:ラスボス]
