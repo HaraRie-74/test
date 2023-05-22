@@ -190,6 +190,12 @@
 # numbers3[0][1] = 2
 # p numbers3
 
-numbers = [12, 34, 56, 78, 90]
-numbers2 = numbers.map{|num| num * 3}
-p numbers2
+# numbers = [12, 34, 56, 78, 90]
+# numbers2 = numbers.map{|num| num * 3}
+# p numbers2
+
+
+
+10.times{
+  puts("Hello")
+}
