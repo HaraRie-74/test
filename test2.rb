@@ -29,13 +29,15 @@
 
 
 
-# array = (1..800).to_a.reverse
+array = (1..800).to_a.reverse
 
-# kg = 0
-#   while kg <= 5000 do
-#     kg = array.inject(0) {|n, kg| n + kg}
-#     puts kg
-#   end
+s = 0
+
+kg = 0
+  while kg <= 5000 do
+    kg = array.inject(0) {|n, kg| n + kg}
+    puts kg
+  end
 
 # for i in (800..1)
 #   while i * n <= 5000 do
